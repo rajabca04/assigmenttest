@@ -17,6 +17,7 @@ const Axiousexp = () => {
   // eslint-disable-next-line array-callback-return
   let data = [];
   post.map((item) => {
+  
     data = [
       ["intensity", "likelihood", "Relevance", "countty", "topic"],
       [
@@ -27,9 +28,10 @@ const Axiousexp = () => {
         item.topic,
       ],
     ];
+    return true
   });
 
-  
+
   const options = {
     chart: {
       title: "Important variables to be visualized",
