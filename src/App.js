@@ -5,6 +5,8 @@ import React, { useEffect } from 'react';
 import Axiousexp from './components/chartjs/Axiousexp';
 
 function App() {
+
+  // Disable right-click
   useEffect(() => {
     const handleContextmenu = e => {
         e.preventDefault()
@@ -14,6 +16,7 @@ function App() {
         document.removeEventListener('contextmenu', handleContextmenu)
     }
 }, [ ])
+
   return (
     <div className="App">
       {/* <Chartexp/> */}

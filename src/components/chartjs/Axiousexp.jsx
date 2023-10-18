@@ -10,7 +10,7 @@ const Axiousexp = () => {
     axios
       .get("http://localhost:3000/api/assigment-data-get")
       .then((responseData) => {
-        console.log(responseData.data.data);
+        // console.log(responseData.data.data);
         setPost(responseData.data.data);
       });
   }, []);
@@ -62,7 +62,7 @@ const Axiousexp = () => {
         onClick={() => {
           let intensityFilter = post.filter((res) => res.intensity > 3);
           setPost(intensityFilter);
-          console.log(intensityFilter);
+          // console.log(intensityFilter);
         }}
       >
         Filter intensity
